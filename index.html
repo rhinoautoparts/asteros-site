@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteros - Refrigeração e Climatização Automotiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="logo.png" alt="Asteros" class="logo-img">
+                </div>
+                <nav class="nav">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#produtos" class="nav-link">Produtos</a>
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+5527999999999" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Contato
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Refrigeração e Climatização
+                        <span class="hero-subtitle">Automotiva</span>
+                    </h1>
+                    <p class="hero-description">
+                        Soluções completas em peças e acessórios para o sistema de refrigeração e ar-condicionado do seu veículo.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#produtos" class="btn btn-white">
+                            Ver Produtos
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="#contato" class="btn btn-outline">
+                            Fale Conosco
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <i class="fas fa-car hero-icon"></i>
+                        <h3>Especialistas em Automotivo</h3>
+                        <p>Mais de 10 anos de experiência no mercado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a Asteros</h2>
+                <p class="section-description">
+                    Na ASTEROS Comércio Internacional LTDA, temos o compromisso de fornecer soluções de qualidade e confiança para o setor automotivo.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Trabalhamos apenas com produtos de alta qualidade, garantindo a durabilidade e eficiência dos componentes.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wrench feature-icon"></i>
+                    <h3>Atendimento Especializado</h3>
+                    <p>Nossa equipe possui amplo conhecimento técnico para orientar na escolha das peças adequadas.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star feature-icon"></i>
+                    <h3>Referência no Mercado</h3>
+                    <p>Nosso objetivo é ser referência no mercado automotivo, entregando produtos e atendimento de excelência.</p>
+                </div>
+            </div>
+
+            <div class="company-info">
+                <div class="company-info-content">
+                    <div class="company-text">
+                        <h3>Nossa Localização</h3>
+                        <p>Com sede no município da Serra, no Espírito Santo, atendemos todo o território nacional com nossos produtos e serviços.</p>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Serra, Espírito Santo - Brasil
+                        </div>
+                    </div>
+                    <div class="company-highlight">
+                        <h4>Comércio por Atacado</h4>
+                        <p>Peças e acessórios novos para veículos automotores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Produtos</h2>
+                <p class="section-description">
+                    Oferecemos uma ampla gama de produtos para refrigeração e climatização automotiva.
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="radiador_carro.png" alt="Radiador de Carro">
+                    </div>
+                    <div class="product-content">
+                        <h3>Radiadores</h3>
+                        <p>Radiadores de alta qualidade para diversos modelos de veículos, garantindo o resfriamento eficiente do motor.</p>
+                        <div class="product-tags">
+                            <span class="tag">Original</span>
+                            <span class="tag">Compatível</span>
+                            <span class="tag">Garantia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cilindro_ar_condicionado_carro.png" alt="Compressor de Ar-Condicionado">
+                    </div>
+                    <div class="product-content">
+                        <h3>Compressores de Ar-Condicionado</h3>
+                        <p>Compressores e componentes do sistema de ar-condicionado automotivo para máximo conforto térmico.</p>
+                        <div class="product-tags">
+                            <span class="tag">Eficiente</span>
+                            <span class="tag">Durável</span>
+                            <span class="tag">Silencioso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other-products">
+                <h3>Outros Produtos</h3>
+                <div class="other-products-grid">
+                    <div class="other-product">
+                        <h4>Condensadores</h4>
+                        <p>Para sistema de ar-condicionado</p>
+                    </div>
+                    <div class="other-product">
+                        <h4>Evaporadores</h4>
+                        <p>Componentes de refrigeração</p>
+                    </div>
+                    <div class="other-product">
+                        <h4>Filtros</h4>
+                        <p>Filtros de ar e cabine</p>
+                    </div>
+                    <div class="other-product">
+                        <h4>Acessórios</h4>
+                        <p>Mangueiras e conexões</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-description">
+                    Oferecemos soluções completas para oficinas, revendedores e distribuidores.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Consultoria Técnica</h3>
+                    <p>Orientação especializada para escolha das peças adequadas para cada aplicação.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Atendimento ágil e personalizado para oficinas, revendedores e distribuidores.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantia de Qualidade</h3>
+                    <p>Todos os nossos produtos possuem garantia e certificação de qualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-description">
+                    Seja você uma oficina, revendedor ou distribuidor, a ASTEROS está pronta para ser sua parceira de confiança.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>E-mail</strong>
+                            <a href="mailto:contato@asteros.com.br">contato@asteros.com.br</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telefone</strong>
+                            <a href="tel:+552720182321">(27) 2018-2321</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Localização</strong>
+                            <span>Serra, Espírito Santo - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Solicite um Orçamento</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <input type="tel" placeholder="Seu telefone" required>
+                        <textarea placeholder="Descreva suas necessidades" rows="4" required></textarea>
+                        <button type="submit" class="btn btn-white">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Asteros" class="footer-logo">
+                    <p>ASTEROS Comércio Internacional LTDA - Soluções de qualidade para o setor automotivo.</p>
+                    <p class="footer-slogan">Na ASTEROS, dirigimos o futuro com você! 🚗✨</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@asteros.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serra, ES - Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ASTEROS Comércio Internacional LTDA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
