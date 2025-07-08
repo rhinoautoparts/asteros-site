@@ -33,18 +33,18 @@ body {
 }
 
 .btn-primary {
-    background: #2563eb;
+    background: #eb2525;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #eb2525;
     transform: translateY(-2px);
 }
 
 .btn-white {
     background: white;
-    color: #2563eb;
+    color: #eb2525;
 }
 
 .btn-white:hover {
@@ -60,7 +60,7 @@ body {
 
 .btn-outline:hover {
     background: white;
-    color: #2563eb;
+    color: #eb2525;
 }
 
 /* Header */
@@ -82,7 +82,7 @@ body {
 }
 
 .logo-img {
-    height: 48px;
+    height: 90px;
     width: auto;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #2563eb;
+    color: #eb2525;
 }
 
 .mobile-menu-btn {
@@ -113,7 +113,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+    background: linear-gradient(135deg, #eb2525 0%, #eb2525 50%, #1e40af 100%);
     color: white;
     padding: 120px 0 80px;
     min-height: 100vh;
@@ -239,7 +239,7 @@ body {
 }
 
 .company-info {
-    background: #2563eb;
+    background: #eb2525;
     color: white;
     padding: 32px;
     border-radius: 12px;
@@ -423,7 +423,7 @@ body {
 
 .service-icon i {
     font-size: 2rem;
-    color: #2563eb;
+    color: #e01414;
 }
 
 .service-card h3 {
@@ -440,7 +440,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: #2563eb;
+    background: #d61406;
     color: white;
 }
 
@@ -695,7 +695,7 @@ html {
 .btn:focus,
 input:focus,
 textarea:focus {
-    outline: 2px solid #2563eb;
+    outline: 2px solid #eb2525;
     outline-offset: 2px;
 }
 
