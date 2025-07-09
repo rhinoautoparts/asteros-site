@@ -1,0 +1,432 @@
+// Dados dos radiadores da Asteros
+const radiadoresData = [
+    {
+        id: 1,
+        codigo: "EU2247EX",
+        nome: "RADIADOR EURUS ASTRA VECTRA ZAFIRA 1.8 2.0 2009 A 2011 AUTOMATICO",
+        aplicacao: "Chevrolet Astra, Vectra, Zafira",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2247EX.png",
+        galeria: ["EU2247EX.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 2,
+        codigo: "EU2771E",
+        nome: "RADIADOR EURUS CITROEN C3 1.4 1.5 1.6 1.8 2003 2004 2005 2006 2007",
+        aplicacao: "Citroën C3",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2771E.png",
+        galeria: ["EU2771E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 3,
+        codigo: "EU2208E",
+        nome: "RADIADOR EURUS FIAT DOBLO 2001 a 2019",
+        aplicacao: "Fiat Doblò",
+        motor: "",
+        anos: "2001 a 2019",
+        transmissao: "Não especificado",
+        imagem: "EU2208E.png",
+        galeria: ["EU2208E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 4,
+        codigo: "EU2534E",
+        nome: "RADIADOR EURUS FIAT PALIO 1.0 1.3 1.5 1.6 1996 A 2002",
+        aplicacao: "Fiat Palio",
+        motor: "1.0 / 1.3 / 1.5 / 1.6",
+        anos: "1996 a 2002",
+        transmissao: "Não especificado",
+        imagem: "EU2534E.png",
+        galeria: ["EU2534E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 5,
+        codigo: "EU2540E",
+        nome: "RADIADOR EURUS FIAT PALIO SIENA STRADA 2002 A 2011",
+        aplicacao: "Fiat Palio, Siena, Strada",
+        motor: "",
+        anos: "2002 a 2011",
+        transmissao: "Não especificado",
+        imagem: "EU2540E.png",
+        galeria: ["EU2540E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 6,
+        codigo: "EU2543E",
+        nome: "RADIADOR EURUS FIAT UNO VIVANCE PALIO GRAND SIENA MOBI 1.0 1.4 1.6 2010 A 2016",
+        aplicacao: "Fiat Uno Vivace, Palio, Grand Siena, Mobi",
+        motor: "1.0 / 1.4 / 1.6",
+        anos: "2010 a 2016",
+        transmissao: "Não especificado",
+        imagem: "EU2543E.png",
+        galeria: ["EU2543E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 7,
+        codigo: "EU2542E",
+        nome: "RADIADOR EURUS FIAT UNO VIVANCE PALIO GRAND SIENA MOBI 1.0 1.4 1.6 2010 A 2016",
+        aplicacao: "Fiat Uno Vivace, Palio, Grand Siena, Mobi",
+        motor: "1.0 / 1.4 / 1.6",
+        anos: "2010 a 2016",
+        transmissao: "Não especificado",
+        imagem: "EU2542E.png",
+        galeria: ["EU2542E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 8,
+        codigo: "EU2733E",
+        nome: "RADIADOR EURUS FORD FIESTA ECOSPORT 2003 A 2012 1,0 1,6",
+        aplicacao: "Ford Fiesta, Ecosport",
+        motor: "1.0 / 1.6",
+        anos: "2003 a 2012",
+        transmissao: "Não especificado",
+        imagem: "EU2733E.png",
+        galeria: ["EU2733E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 9,
+        codigo: "EU2738B",
+        nome: "RADIADOR EURUS FORD FIESTA1.5 1.6 MEXICANO KA 1,5 COM AR 2013 DIANTE",
+        aplicacao: "Ford Fiesta Mexicano, Ford Ka",
+        motor: "1.5 / 1.6",
+        anos: "2013 em diante",
+        transmissao: "Não especificado",
+        imagem: "EU2738B.png",
+        galeria: ["EU2738B.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 10,
+        codigo: "EU2520E",
+        nome: "RADIADOR EURUS FORD KA 2008 A 2013 FIESTA ATE 2005 COURIER",
+        aplicacao: "Ford Ka, Fiesta, Courier",
+        motor: "",
+        anos: "2008 a 2013 / até 2005",
+        transmissao: "Não especificado",
+        imagem: "EU2520E.png",
+        galeria: ["EU2520E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 11,
+        codigo: "EU2233E",
+        nome: "RADIADOR EURUS GM AGILE 2009 DIANTE MONTANA 2011 DIANTE",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2233E.png",
+        galeria: ["EU2233E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 12,
+        codigo: "EU2246EX",
+        nome: "RADIADOR EURUS GM ASTRA VECTRA ZAFIRA 1.8 2.0 2009 A 2011 MANUAL",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2246EX.png",
+        galeria: ["EU2246EX.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 13,
+        codigo: "EU2575E",
+        nome: "RADIADOR EURUS GM ASTRA ZAFIRA 1999 DIANTE VECTRA 2006 DIANTE MANUAL",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2575E.png",
+        galeria: ["EU2575E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 14,
+        codigo: "EU2223E",
+        nome: "RADIADOR EURUS GM CELTA E PRISMA 2006 A 2011",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2223E.png",
+        galeria: ["EU2223E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 15,
+        codigo: "EU1134EX",
+        nome: "RADIADOR EURUS GM COBALT ONIX PRISMA SPIN 2017 A 2019 MANUAL",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU1134EX.png",
+        galeria: ["EU1134EX.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 16,
+        codigo: "EU1135EX",
+        nome: "RADIADOR EURUS GM COBALT SPIN ONIX PRISMA 1.4 1.8 2017 A 2019 AUTOMATICO",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU1135EX.png",
+        galeria: ["EU1135EX.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 17,
+        codigo: "EU2235EX",
+        nome: "RADIADOR EURUS GM COBALT SPIN ONIX PRISMA 2012 A 2016 AUTOMÁTICO",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2235EX.png",
+        galeria: ["EU2235EX.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 18,
+        codigo: "EU2562E",
+        nome: "RADIADOR EURUS GM CORSA CLASSIC 1994 A 2010 COM AR",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2562E.png",
+        galeria: ["EU2562E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 19,
+        codigo: "EU2577E",
+        nome: "RADIADOR EURUS GM CORSA MONTANA 2003 A 2010",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2577E.png",
+        galeria: ["EU2577E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 20,
+        codigo: "EU2573E",
+        nome: "RADIADOR EURUS GM MERIVA 2003 A 2014 COM AR",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2573E.png",
+        galeria: ["EU2573E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 21,
+        codigo: "EU2702B",
+        nome: "RADIADOR EURUS HYUNDAI HB20 VELOSTER 1.0 1.6 2012 A 2019",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2702B.png",
+        galeria: ["EU2702B.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 22,
+        codigo: "EU2751E",
+        nome: "RADIADOR EURUS PEUGEOT 206 207 307 CITROEN PICASSO 1999 A 2014",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2751E.png",
+        galeria: ["EU2751E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 23,
+        codigo: "EU2903E",
+        nome: "RADIADOR EURUS RENAULT CLIO LOGAN SANDERO SYMBOL 2006 A 2013 COM AR",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2903E.png",
+        galeria: ["EU2903E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 24,
+        codigo: "EU7014E",
+        nome: "RADIADOR EURUS RENAULT LOGAN SANDERO DUSTER 2014 DIANTE",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU7014E.png",
+        galeria: ["EU7014E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 25,
+        codigo: "EU2528E",
+        nome: "RADIADOR EURUS VW GOL G5 G6 G7 2008 EM DIANTE",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2528E.png",
+        galeria: ["EU2528E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 26,
+        codigo: "EU2508E",
+        nome: "RADIADOR EURUS VW GOL PARATI E VOYAGE 1,0 1997 A 2009 MOTOR AT",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2508E.png",
+        galeria: ["EU2508E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 27,
+        codigo: "EU2503E",
+        nome: "RADIADOR EURUS VW GOL VOYAGE PARATI SAVEIRO 1995 A 2008 MOTOR AP",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2503E.png",
+        galeria: ["EU2503E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 28,
+        codigo: "EU9205E",
+        nome: "RADIADOR EURUS VW KOMBI 1.4 FLEX 2011",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU9205E.png",
+        galeria: ["EU9205E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    },
+    {
+        id: 29,
+        codigo: "EU2517E",
+        nome: "RADIADOR EURUS VW POLO E FOX 2003 A 2005 COM AR",
+        aplicacao: "",
+        motor: "",
+        anos: "",
+        transmissao: "Não especificado",
+        imagem: "EU2517E.png",
+        galeria: ["EU2517E.png"],
+        preco: "CONSULTAR",
+        disponivel: true,
+        categoria: "Original"
+    }
+];
+
+
+// Função para buscar radiador por ID
+function getRadiadorById(id) {
+    return radiadoresData.find(radiador => radiador.id === id);
+}
+
+// Função para filtrar radiadores por marca
+function getRadiadoresByMarca(marca) {
+    return radiadoresData.filter(radiador => 
+        radiador.aplicacao.toLowerCase().includes(marca.toLowerCase())
+    );
+}
+
+// Função para buscar radiadores por texto
+function searchRadiadores(searchTerm) {
+    const term = searchTerm.toLowerCase();
+    return radiadoresData.filter(radiador => 
+        radiador.nome.toLowerCase().includes(term) ||
+        radiador.aplicacao.toLowerCase().includes(term) ||
+        radiador.codigo.toLowerCase().includes(term)
+    );
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiadores - Asteros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="radiadores.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="logo_eurus.png" alt="Asteros" class="logo-img">
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="index.html#sobre" class="nav-link">Sobre</a>
+                    <a href="radiadores.html" class="nav-link active">Radiadores</a>
+                    <a href="index.html#servicos" class="nav-link">Serviços</a>
+                    <a href="index.html#contato" class="nav-link">Contato</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+5521964328498" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Contato
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="radiadores-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Radiadores Automotivos</h1>
+                <p>Linha completa de radiadores EURUS para diversos modelos de veículos</p>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar por modelo, marca ou código...">
+                    <button onclick="searchRadiadores()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filtros">
+        <div class="container">
+            <div class="filtros-wrapper">
+                <h3>Filtrar por marca:</h3>
+                <div class="filtros-buttons">
+                    <button class="filtro-btn active" onclick="filterByMarca('todos')">Todos</button>
+                    <button class="filtro-btn" onclick="filterByMarca('chevrolet')">Chevrolet</button>
+                    <button class="filtro-btn" onclick="filterByMarca('ford')">Ford</button>
+                    <button class="filtro-btn" onclick="filterByMarca('volkswagen')">Volkswagen</button>
+                    <button class="filtro-btn" onclick="filterByMarca('fiat')">Fiat</button>
+                    <button class="filtro-btn" onclick="filterByMarca('hyundai')">Hyundai</button>
+                    <button class="filtro-btn" onclick="filterByMarca('nissan')">Nissan</button>
+                    <button class="filtro-btn" onclick="filterByMarca('toyota')">Toyota</button>
+                    <button class="filtro-btn" onclick="filterByMarca('honda')">Honda</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Radiadores -->
+    <section class="radiadores-grid-section">
+        <div class="container">
+            <div class="radiadores-grid" id="radiadoresGrid">
+                <!-- Os radiadores serão carregados aqui via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal da Galeria -->
+    <div id="galeriaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <p id="modalCodigo"></p>
+            </div>
+            <div class="modal-body">
+                <div class="galeria-container">
+                    <div class="galeria-main">
+                        <img id="mainImage" src="" alt="">
+                        <div class="galeria-controls">
+                            <button onclick="previousImage()"><i class="fas fa-chevron-left"></i></button>
+                            <button onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="galeria-thumbnails" id="thumbnails">
+                        <!-- Thumbnails serão carregadas aqui -->
+                    </div>
+                </div>
+                <div class="produto-details">
+                    <div class="detail-item">
+                        <strong>Aplicação:</strong>
+                        <span id="modalAplicacao"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Motor:</strong>
+                        <span id="modalMotor"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Anos:</strong>
+                        <span id="modalAnos"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Transmissão:</strong>
+                        <span id="modalTransmissao"></span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Preço:</strong>
+                        <span id="modalPreco" class="preco"></span>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" onclick="solicitarOrcamento()">
+                            <i class="fas fa-shopping-cart"></i>
+                            Solicitar Orçamento
+                        </button>
+                        <button class="btn btn-outline" onclick="compartilhar()">
+                            <i class="fas fa-share"></i>
+                            Compartilhar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Asteros" class="footer-logo">
+                    <p>ASTEROS Comércio Internacional LTDA - Soluções de qualidade para o setor automotivo.</p>
+                    <p class="footer-slogan">Na ASTEROS, dirigimos o futuro com você! 🚗✨</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="radiadores.html">Radiadores</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> contato@asteros.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serra, ES - Brasil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ASTEROS Comércio Internacional LTDA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="radiadores-data.js"></script>
+    <script src="radiadores.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -262,4 +262,3 @@ window.addEventListener('load', () => {
 });
 
 console.log('Site da Asteros carregado com sucesso!');
-
