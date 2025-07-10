@@ -284,7 +284,7 @@ const radiadoresData = [
         id: 21,
         codigo: "EU2702B",
         nome: "RADIADOR EURUS HYUNDAI HB20 VELOSTER 1.0 1.6 2012 A 2019",
-        aplicacao: "Hyndai, Hb20, Veloster",
+        aplicacao: "Hyundai, Hb20, Veloster",
         motor: "1.0 1.6",
         anos: "2012 A 2019",
         transmissao: "Não especificado",
